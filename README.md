@@ -39,44 +39,7 @@ Loops inside loops, used for matrix operations, combinations, and pattern printi
 
 ---
 
-## Practical Implementation
 
-### Matrix Multiplication
-```python
-# Triple nested loop for matrix multiplication
-for i in range(row1):
-    for j in range(col2):
-        for k in range(col1):
-            result[i][j] += matrix_A[i][k] * matrix_B[k][j]
-Floyd’s Triangle
-python
-n = int(input("Layers: "))
-a = 1
-for i in range(n+1):
-    for j in range(i):
-        print(a, end=" ")
-        a += 1
-    print()
-Prime Numbers in Range
-python
-for num in range(n, m+1):
-    for i in range(2, num):
-        if num % i == 0:
-            break
-    else:
-        print(num, end=" ")
-Diamond Pattern
-python
-n = 5
-for i in range(n,0,-1):
-    print(i*" ", (n-i)*"* ")
-for i in range(n):
-    print(i*" ", (n-i)*"* ")
-2D Plane with Stars
-python
-n = 5
-for i in range(n):
-    print(i*" ", n*" * ")
 Applications
 Basic Counter: while loop
 
